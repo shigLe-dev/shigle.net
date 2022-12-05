@@ -1,7 +1,13 @@
+
+/*font*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+
 body{
     margin:0;
     background:#2d2d2d;
     color:#ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 div{
@@ -105,7 +111,76 @@ footer ul{
 
 /*よく使うやつ*/
 
+.title_b{
+    font-size:3em;
+    color:#fff;
+}
+
 .title2{
     font-size:2.2em;
     color:#fff;
+}
+
+.title3{
+    font-size:1.4em;
+    color:#fff;
+}
+
+
+/*project menu*/
+
+.menu_box{
+    display:block;
+    margin:  0 auto;
+    width:15.4em;
+    height:17em;
+    border-radius:0.5em;
+    background:#1d1d1d;
+    color:#ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu_box:hover{
+    background:#101010;
+    color:#dddddd;
+}
+
+.menu_box img{
+    margin:0.7em;
+    margin-top:1.3em;
+    height:8em;
+    width:13em;
+    border-radius:0.5em;
+}
+
+
+
+
+/*buttonら*/
+
+.btn {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #2d2d2d;
+  border-radius: 0.5rem;
+  background-color: #2091f3;
+}
+.btn:hover{
+    background-color: #1063ad;
 }
