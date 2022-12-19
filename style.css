@@ -105,6 +105,7 @@ footer .menu li{
 footer ul{
   list-style: none;
   margin-left:5em;
+  text-align: left;
 }
   
 
@@ -184,4 +185,8 @@ footer ul{
 }
 .btn:hover{
     background-color: #1063ad;
+}
+
+footer li a:hover, header a:hover {
+    text-decoration: underline;
 }
