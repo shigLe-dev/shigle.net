@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+
+        <!--inter font-->
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    </head>
+
+    <body>
+        <div class="saved_box">
+            <div class="box" style="padding-top:15vh;">
+                <span class="hozon_text">メモ一覧</span>
+
+                <div class="file" id="file_list" style="padding-top:6vh;">
+                    <div class="name">note1</div>
+                    <div class="name">note2</div>
+                </div>
+                <div id="add_file_content">
+                    <input type="text" id="add_file_name" size="10">
+                    <div id="add_file_button" onclick="add_file()"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tool_and_edit">
+            <div class="top_bar">
+                <div id="file_name_big">note1</div>
+                <div id="display_pin" onclick="display_pin_box()"></div> <!--display pin-->
+
+                <div style="text-align: center;position:relative;">
+                    <input id="search_box">
+                    <div id="search_close" onclick="close_result_box()"></div>
+                </div>
+            <div>
+
+                
+            <div id="main_box" onclick="close_result_box();close_pin_box()">
+
+                <div class="memo_box">
+                    <div class="add_pin" onclick="add_pin(event)"></div>
+                    <div class="edit" onclick="edit_memo(event)"></div>
+                    <div class="time">
+                        1/1 - 0:00
+                    </div>
+                    <div class="main">
+                        hoge
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="position:relative">
+                <div class="image_upload">
+                    <input type="file" id="image_up_btn">
+                    <!--image upload svg-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #202020">
+                        <path d="M11 15h2V9h3l-4-5-4 5h3z"></path>
+                        <path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path>
+                    </svg>
+                </div>
+
+                <!--text input box-->
+                <textarea id="memo_text" class="memo_text" name="memo_text" rows="2" style="width:70vw;" onclick="close_result_box();close_pin_box()"></textarea>
+                <div style="padding-left:3em;">改行は[shift]+[Enter],書き込みは[Enter]</div>
+            </div>
+
+        </div>
+
+        <!--search result modal-->
+        <div>
+            <div id="result_box">
+                
+            </div>
+        </div>
+
+        <!--display pin list modal-->
+        <div>
+            <div id="pin_list_box">
+                
+            </div>
+        </div>
+
+
+        <script src="file.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,283 @@
+body{
+    margin:0px;
+    display:flex;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* inter font */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.saved_box{
+    overflow-y:scroll;
+    /* IE, Edge 対応 */
+    -ms-overflow-style: none;
+    /* Firefox 対応 */
+    scrollbar-width: none;
+    width:17vw;
+    background:#202020;
+    color:#fff;
+}
+.saved_box::-webkit-scrollbar{
+    display: none;
+}
+
+
+.saved_box .name{
+    position:relative;
+    list-style:none;
+    width:17vw;
+    padding-left:3vw;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+}
+
+.saved_box .name:hover{
+    background:#2d2d2d;
+}
+
+.saved_box .name:active{
+    background:#1d1d1d;
+}
+
+.saved_box .name > .edit_name{
+    display:inline-block;
+    position:absolute;
+    width:1.2em;
+    height:1.2em;
+    left:12vw;
+    background:url("./pen.svg");
+}
+
+.hozon_text{
+    font-size:1.5vw;
+    padding-left:3vw;
+}
+
+#add_file_content{
+    position:relative;
+    margin-top:1em;
+    padding-left:3vw;
+}
+#add_file_button{
+    display:inline-block;
+    position:absolute;
+    top:0;
+    width:1.3em;
+    height:1.3em;
+    margin-left:0.5em;
+    background:url('./add_file.svg');
+}
+
+
+.tool_and_edit{
+    color:#fff;
+    background:#2d2d2d;
+    width:83vw;
+}
+
+.top_bar{
+    height:7vh;
+    background: #555555;
+}
+
+#file_name_big{
+    color:#ffffff;
+    text-align:center;
+    padding-top:0.4em;
+    padding-left:2em;
+    font-size:1.3em;
+}
+
+#display_pin{
+    position:absolute;
+    width: 1.2em;
+    height:1.2em;
+    left:80vw;
+    top:0.7em;
+    background:url("./add_pin.svg")
+}
+
+/*pin止めリストを表示*/
+#pin_list_box{
+    display:none; /*デフォルトでは非表示*/
+    position:absolute;
+    overflow:scroll;
+    top:7vh;
+    left:57vw;
+    width:20vw;
+    height:50vh;
+    margin:1vw;
+    z-index:2;
+    background:#202020;
+    border-radius:0.5em;
+    border: #202020 solid 1em;
+}
+#pin_list_box::-webkit-scrollbar{
+    display: none;
+}
+
+#search_box{
+    font-size:1.2em;
+    height:5vh;
+    width:40vw;
+    margin-top:1vh;
+    border-radius:0.5em;
+}
+
+#search_close{
+    display:inline-block;
+    position:absolute;
+    top:1vh;
+    width:5vh;
+    height:5vh;
+    margin-left:0.5em;
+    background:url('./close.svg');
+}
+
+/*検索結果*/
+#result_box{
+    display:none; /*デフォルトでは非表示*/
+    position:absolute;
+    overflow:scroll;
+    top:13vh;
+    left:37vw;
+    width:40vw;
+    height:50vh;
+    margin:1vw;
+    z-index:2;
+    background:#202020;
+    border-radius:0.5em;
+    border: #202020 solid 1em;
+}
+#result_box::-webkit-scrollbar{
+    display: none;
+}
+
+
+#main_box{
+    overflow-y:scroll;
+    /* IE, Edge 対応 */
+    -ms-overflow-style: none;
+    /* Firefox 対応 */
+    scrollbar-width: none;
+    height:65vh;
+    padding-top:3vh;
+}
+#main_box::-webkit-scrollbar {
+    display:none;
+}
+
+
+.memo_box{
+    position:relative;
+    width:70vw;
+    margin-top:2.5vh;
+    margin-left:3em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1.5em;
+    /*border:#444444 solid 2px;*/
+    background:#444444;
+    border-radius:0.5em;
+    transition:0.25s;
+}
+.memo_box:hover{
+    background:#333333;
+}
+
+.memo_box .edit{
+    position:absolute;
+    width: 1.2em;
+    height:1.2em;
+    margin-left:60vw;
+    background:url("./pen.svg")
+}
+.memo_box .add_pin{
+    position:absolute;
+    width: 1.2em;
+    height:1.2em;
+    margin-left:calc(60vw + 2em);
+    background:url("./add_pin.svg")
+}
+
+.memo_box .delete{
+    position:absolute;
+    width: 1.2em;
+    height:1.2em;
+    margin-left:calc(60vw + 4em);
+    background:url("./delete.svg")
+}
+
+.memo_box .time{
+    font-size:0.8em;
+    padding-left:45vw;
+    color:#aaaaaa;
+}
+
+.memo_box .main{
+    padding-top:0.5em;
+}
+
+
+/*検索した時の結果*/
+.search_memo_box{
+    position:relative;
+    margin-top:2.5vh;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1.5em;
+    /*border:#444444 solid 2px;*/
+    background:#444444;
+    border-radius:0.5em;
+    transition:0.25s;
+}
+.search_memo_box:hover{
+    background:#333333;
+}
+
+.search_memo_box .time{
+    font-size:0.8em;
+    padding-left:20vw;
+    color:#aaaaaa;
+}
+
+.search_memo_box .main{
+    padding-top:0.5em;
+}
+/*************/
+
+
+/*書き込みbox*/
+.memo_text{
+    resize: none;
+    font-size:1em;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-left:2.5em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    margin-top:4vh;
+    margin-left:3em;
+    color:#ffffff;
+    background:#666666;
+    border:#666666;
+    border-radius:0.5em;
+}
+
+.image_upload{
+    display:relative;
+    position:absolute;
+    left:3.5em;
+    top:5vh;
+}
+
+#image_up_btn{
+    position:absolute;
+    left:0;
+    opacity:0;
+    width:24px;
+    height:24px;
+}

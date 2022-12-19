@@ -4,7 +4,20 @@
         <meta charset="UTF-8">
         <link href="../../style.css" rel="stylesheet">
 
-        <title>shigLe | official page</title>
+        <title>shigLe | YoutubeLiveChatSharp</title>
+
+        <meta property="og:title" content="shigLe | YoutubeLiveChatSharp">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Youtube Liveのチャット欄をYoutube APIなしで取得することができるC#ライブラリです。">
+        <meta property="og:url" content="https://shigle.net/projects/YoutubeLiveChatSharp">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@shigledev">
+        
+        <meta property="og:image" content="https://shigle.net/projects/YoutubeLiveChatSharp/header.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
 
     <body>
@@ -21,15 +34,29 @@
             <div style="padding-top:30vh;">
                 <span class="title2">Overview</span><br><br>
                 Youtube Liveのチャット欄をYoutube APIなしで取得することができるC#ライブラリです。<br>
-                ソフト開発はもちろん、Unityなどにも使うことができます。<br>
+                ソフト開発はもちろん、Unityなどにも使うことができます。<br><br>
+                <a href="https://github.com/shigLe-dev/YoutubeLiveChatSharp" class="btn">Github</a>
             </div>
 
             <div style="padding-top:30vh;">
                 <span class="title2">Usage</span><br><br>
-                アプリケーション、ソフトウェア、ライブラリの場合絶対に書いてください。それ以外は書く必要があったら書いてください。<br>
-                <!---使い方などはスクリーンショットを用いながら丁寧に-<br><br>-->
+
+<pre>
+<code>
+using YoutubeLiveChatSharp;
+
+var chat = new ChatFetch(liveID);
+var comments = chat.Fetch();
+</code>
+</pre>
+liveIDは以下のxxxxxxxxxxxに当たる部分です。<br><br>
+
+<span style="background:#505050">https://www.youtube.com/watch?v=xxxxxxxxxxx</span><br><br>
+Fetch関数は、前回に呼び出したよりも後に送信されたコメントを取得します。<br><br>
+
+一度だけではなく、定期的に呼び出してください。<br><br>
                 
-                <a href="#" class="btn">Download</a>
+                <a href="https://github.com/shigLe-dev/YoutubeLiveChatSharp" class="btn">Github</a>
             </div>
         </div>
 
@@ -39,6 +66,14 @@
 
 
         <script src="../../main.js"></script>
+
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+code{
+  font-family: 'Source Code Pro', monospace;
+}
+        </style>
 
     </body>
 </html>
