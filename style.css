@@ -130,7 +130,8 @@ footer ul{
 /*project menu*/
 
 .menu_box{
-    display:block;
+    display:inline-block;
+    vertical-align: top; /*上がずれるから修正*/
     margin:  0 auto;
     width:15.4em;
     height:17em;
