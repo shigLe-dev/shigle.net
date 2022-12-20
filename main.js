@@ -8,15 +8,15 @@ document.getElementsByTagName("header")[0].innerHTML = `
 <a href="#" class="menu">About</a>
 <a href="`+home_url+`projects/" class="menu">Projects</a>
 <a href="#" class="menu">News</a>
-<a href="#" class="menu">Contact</a>
+<a href="https://forms.gle/j6Lqg6KycMqkgUfd7" class="menu">Contact</a>
 `
 
 
-document.getElementsByTagName("footer")[0].innerHTML = `
+var pc_footer_html = `
 <span class="logo">
                 <ul>
                     <li>
-                        <img src="`+home_url+`image/shigle_white_horizontal_logo.png" style="width:11vw;">
+                        <img src="`+home_url+`image/shigle_white_horizontal_logo.png" style="width:10em;">
                     </li>
                     <li>https://shigle.net/</li>
                 </ul>
@@ -25,21 +25,59 @@ document.getElementsByTagName("footer")[0].innerHTML = `
             <span class="menu">
                 <ul>
                     <span style="color:#888888">Social</span>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Discord</a></li>
+                    <li><a href="https://github.com/shigle-dev">Github</a></li>
+                    <li><a href="https://twitter.com/shigledev">Twitter</a></li>
+                    <li><a href="https://discord.gg/bEbrRJ4Z">Discord</a></li>
                 </ul>
                 
                 <ul>
                     <span style="color:#888888">Pages</span>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="`+home_url+`">Home</a></li>
+                    <li><a href="`+home_url+`projects/">Project</a></li>
+                    <li><a href="https://forms.gle/j6Lqg6KycMqkgUfd7">Contact</a></li>
                 </ul>
                 <ul>
                     <span style="color:#888888">Projects</span>
-                    <li><a href="#">hoge</a></li>
-                    <li><a href="#">fuga</a></li>
+                    <li><a href="`+home_url+`projects/YoutubeLiveChatSharp/">YoutubeLiveChatSharp</a></li>
+                    <li><a href="`+home_url+`projects/file_bookmarker/">File bookmarker</a></li>
+                    <li><a href="`+home_url+`projects/chotmemo/">Chotmemo</a></li>
                 </ul>
             </span>
 `
+
+
+var mob_footer_html = `
+<span class="logo">
+                <ul>
+                    <li>
+                        <img src="`+home_url+`image/shigle_white_horizontal_logo.png" style="width:10em;">
+                    </li>
+                    <li>https://shigle.net/</li>
+                </ul>
+            </span>
+`
+
+
+//レスポンシブ対応
+if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) {
+    //スマホ
+    document.getElementsByTagName("footer")[0].innerHTML = mob_footer_html
+
+    document.getElementsByTagName("footer")[0].getElementsByTagName("ul")[0].style.margin = "0 0 3em 0"
+
+    var title_b = document.getElementsByClassName("title_b")
+
+    for(var i = 0;i < title_b.length;i++){
+        title_b[i].style.fontSize = "1.7em"
+    }
+
+    var title2 = document.getElementsByClassName("title2")
+
+    for(var i = 0;i < title_b.length;i++){
+        title2[i].style.fontSize = "1.3em"
+    }
+
+  } else {
+    //pc
+    document.getElementsByTagName("footer")[0].innerHTML = pc_footer_html
+  }
