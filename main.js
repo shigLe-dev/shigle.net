@@ -81,3 +81,13 @@ if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches)
     //pc
     document.getElementsByTagName("footer")[0].innerHTML = pc_footer_html
   }
+
+
+//言語設定
+var language = window.navigator.language
+
+if(location.href == "https://shigle.net" || location.href == "https://shigle.net/"){
+    if(language == "en"){
+        location.href="https://shigle.net/en/"
+    }
+}

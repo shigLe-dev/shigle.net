@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,height=device-width">
+        <link href="../../../style.css" rel="stylesheet">
+
+        <title>shigLe | YoutubeLiveChatSharp - English</title>
+
+        <meta property="og:title" content="shigLe | YoutubeLiveChatSharp">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Youtube Liveのチャット欄をYoutube APIなしで取得することができるC#ライブラリです。">
+        <meta property="og:url" content="https://shigle.net/projects/YoutubeLiveChatSharp">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@shigledev">
+        
+        <meta property="og:image" content="https://shigle.net/projects/YoutubeLiveChatSharp/header.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+
+                <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5WYWM8GQ8"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-C5WYWM8GQ8');
+        </script>
+
+    </head>
+
+    <body>
+        <div class="back_t1"></div>
+        <div class="back_t2"></div>
+        <div class="back_t3"></div>
+
+        <header>
+        </header>
+
+        <div style="padding-top:20vh;text-align:center;">
+            <span class="title_b">YoutubeLiveChatSharp</span><br><br>
+
+            <div style="padding-top:30vh;">
+                <span class="title2">Overview</span><br><br>
+                A libraly for C#, You can get Youtube Live Chat with it without Youtube API. <br>
+                You can use to develop a software,Unity,etc.<br><br>
+                <a href="https://github.com/shigLe-dev/YoutubeLiveChatSharp" class="btn">Github</a>
+            </div>
+
+            <div style="padding-top:30vh;">
+                <span class="title2">Usage</span><br><br>
+
+<pre>
+<code>
+using YoutubeLiveChatSharp;
+
+var chat = new ChatFetch(liveID);
+var comments = chat.Fetch();
+</code>
+</pre>
+liveID is the part that corresponds to "xxxxxxxxxxx" below.<br><br>
+
+<span style="background:#505050">https://www.youtube.com/watch?v=xxxxxxxxxxx</span><br><br>
+The Fetch function retrieves comments sent after the last call.<br><br>
+
+Call them regularly, not just once.<br><br>
+                
+                <a href="https://github.com/shigLe-dev/YoutubeLiveChatSharp" class="btn">Github</a>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+
+
+        <script src="../../../main.js"></script>
+
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+code{
+  font-family: 'Source Code Pro', monospace;
+}
+        </style>
+
+    </body>
+</html>
