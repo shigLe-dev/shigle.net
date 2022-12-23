@@ -87,7 +87,7 @@ if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches)
 var language = window.navigator.language
 
 if(location.href == "https://shigle.net" || location.href == "https://shigle.net/"){
-    if(language == "en"){
+    if(language.includes("en")){
         location.href="https://shigle.net/en/"
     }
 }
