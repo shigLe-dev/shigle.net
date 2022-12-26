@@ -65,6 +65,7 @@ if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches)
 
     document.getElementsByTagName("footer")[0].getElementsByTagName("ul")[0].style.margin = "0 0 3em 0"
 
+    //タイトルの大きさ
     var title_b = document.getElementsByClassName("title_b")
 
     for(var i = 0;i < title_b.length;i++){
@@ -75,6 +76,14 @@ if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches)
 
     for(var i = 0;i < title_b.length;i++){
         title2[i].style.fontSize = "1.3em"
+    }
+
+    //画像の大きさ
+
+    var mobile_img = document.getElementsByClassName("mobile_img")
+
+    for(var i = 0;i < mobile_img.length;i++){
+        mobile_img[i].style.width = "90vw"
     }
 
   } else {
