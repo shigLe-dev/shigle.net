@@ -3,6 +3,10 @@
 home_url = "https://shigle.net/"
 
 
+if(language.includes("en")){
+    home_url = "https://shigle.net/en/"
+}
+
 document.getElementsByTagName("header")[0].innerHTML = `
 <a href="`+home_url+`" class="menu">Home</a>
 <a href="#" class="menu">About</a>
@@ -10,7 +14,6 @@ document.getElementsByTagName("header")[0].innerHTML = `
 <a href="#" class="menu">News</a>
 <a href="https://forms.gle/j6Lqg6KycMqkgUfd7" class="menu">Contact</a>
 `
-
 
 var pc_footer_html = `
 <span class="logo">
