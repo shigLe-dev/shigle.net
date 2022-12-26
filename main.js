@@ -2,6 +2,8 @@
 
 home_url = "https://shigle.net/"
 
+//言語設定
+var language = window.navigator.language
 
 if(language.includes("en")){
     home_url = "https://shigle.net/en/"
