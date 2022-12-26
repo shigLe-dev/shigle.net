@@ -91,6 +91,14 @@ if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches)
         mobile_img[i].style.width = "90vw"
     }
 
+    //menu boxの間隔 (縦)
+    var menu_box_m = document.getElementsByClassName("menu_box")
+
+    for(var i = 0;i < menu_box_m.length;i++){
+        menu_box_m[i].style.display = "block"
+        menu_box_m[i].style.marginTop = "1em"
+    }
+
   } else {
     //pc
     document.getElementsByTagName("footer")[0].innerHTML = pc_footer_html
