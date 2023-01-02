@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,height=device-width">
-        <link href="../../style.css" rel="stylesheet">
+        <link href="https://shigle.net/style.css" rel="stylesheet">
 
         <title>shigLe | Mycturl</title>
 
         <meta property="og:title" content="shigLe | Chotmemo">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="urlにアクセスするだけでパソコンを操作することができます。">
-        <meta property="og:url" content="https://shigle.net/projects/mycturl">
+        <meta property="og:description" content="You can operate your computer with accessing the URL.">
+        <meta property="og:url" content="https://shigle.net/en/projects/mycturl">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@shigledev">
         
@@ -46,43 +46,42 @@
 
             <div style="padding-top:30vh;">
                 <span class="title2">Overview</span><br><br>
-                ローカルサーバーを公開して、コマンドを設定し、<br>
-                urlにアクセスするだけでパソコンを操作することができます。<br><br>
-                ローカルサーバーを公開しない限り、外部者(LANに接続していない人)に操作されることはありません。<br><br>
+                If you set a command,<br>
+                You can operate your computer with accessing URL.<br><br>
+                Your computer isn't operated by outsiders without publish the local server.<br><br>
                 <a href="https://github.com/shigLe-dev/mycturl/releases/download/1.0.0/mycturl_setup.exe" class="btn">Download</a><br><br>
                 <a href="https://github.com/shigLe-dev/mycturl/" class="btn" style="background:#000;color:#fff;">Github</a><br><br>
-                <img src="./img/scr1.png" style="width:40vw;">
+                <img src="https://shigle.net/projects/mycturl/img/scr1.png" style="width:40vw;">
             </div>
 
             <div style="padding-top:30vh;">
                 <span class="title2">Usage</span><br><br>
-                <span style="font-size:1.3em;">コマンドを登録</span><br><br>
-                コマンドを登録することによって他のコンピューターからurlにアクセスすることで<br>
-                コンピューターを操作することができます。<br><br>
+                <span style="font-size:1.3em;">setting a command</span><br><br>
+                Please run Mycturl.<br>
+                <img src="https://shigle.net/projects/mycturl/img/scr0.png" style="width:40em;" class="mobile_img"><br><br>
+                1.Please click [New command]<br><br>
 
-                コマンドラインに表示されたURLにアクセスします。<br><br>
-                <img src="./img/scr0.png" style="width:40em;" class="mobile_img"><br><br>
-                1.[New command]をクリックします<br><br>
+                <img src="https://shigle.net/projects/mycturl/img/usage1.png" style="width:40em;" class="mobile_img"><br><br>
+                2.Please type a command id.<br>
+                3.Type a action of running to content.<br><br>
+                You must secret this id.<br><br>
+                <img src="https://shigle.net/projects/mycturl/img/usage2.png" style="width:40em;" class="mobile_img"><br><br><br><br>
 
-                <img src="./img/usage1.png" style="width:40em;" class="mobile_img"><br><br>
-                2.command idを入力して、functionを選択します。<br>
-                3.contentに実行したいコマンドの内容などを入力します。<br><br>
-                このidを他人に知られるとコンピューターを操作される可能性があるので他人におしえることはあまりおすすめしません。<br><br>
-                <img src="./img/usage2.png" style="width:40em;" class="mobile_img"><br><br><br><br>
+                <span style="font-size:1.3em;">Add a URL query parametor</span><br><br>
+                If you add a url query parametor,that part is replaced value of url query paramater.<br><br><br>
+                Please click the [＋] button and the [Add] button.<br>
+                <img src="https://shigle.net/projects/mycturl/img/usage3.png" style="width:40em;" class="mobile_img"><br><br><br><br>
 
-                <span style="font-size:1.3em;">URLクエリパラメーターを追加</span><br><br>
-                クエリパラメーターを追加するで、その部分がパラメーターの値に変換されます。<br><br><br>
-                ＋ボタンを押して、パラメーター名を入力し、[Add]を押します。<br>
-                <img src="./img/usage3.png" style="width:40em;" class="mobile_img"><br><br><br><br>
-
-                <span style="font-size:1.3em;">編集/削除</span><br><br>
+                <span style="font-size:1.3em;">Edit/delete</span><br><br>
                 <br>
-                editボタンを押すと編集ページに移動し、deleteボタンを押すとコマンドが削除されます。<br><br>
+                If you click "edit",you are going to go to the command edit page.
+                And if you click "delete",that command is going to be deleted. 
+                <br><br>
                 
-                <span class="title2">コマンド実行</span><br><br>
+                <span class="title2">Run the command</span><br><br>
 
-                URLの欄に書かれているURLにアクセスするとコマンドが実行されます。<br><br>
-                <img src="./img/usage4.png" style="width:40em;" class="mobile_img"><br><br>
+                If you access the written URL in the URL colum,You can run the set command.<br><br>
+                <img src="https://shigle.net/projects/mycturl/img/usage4.png" style="width:40em;" class="mobile_img"><br><br>
                 
                 <br><br>
 
@@ -90,7 +89,7 @@
                 
                 <span style="font-size:1.3em;">OS command</span><br><br>
 
-                実行したいコマンドを入力します。例:<br>
+                Please type a command that you want to run. E.g:<br>
                 <pre>
                     <code>
 dir
@@ -100,7 +99,7 @@ dir
 
                 <span style="font-size:1.3em;">open</span><br><br>
 
-                ソフトウェアを開きます 例:<br>
+                Please type a path of software E.g.:<br>
                 <pre>
                     <code>
 chrome
@@ -109,7 +108,7 @@ chrome
 
                 <span style="font-size:1.3em;">Write in the file</span><br><br>
 
-                ファイルに書き込んだり、作成したりします<br>
+                You can make a file or write in a file.<br>
                 <pre>
                     <code>
 filename
@@ -117,7 +116,7 @@ text
                     </code>
                 </pre>
 
-                例:<br>
+                E.g:<br>
                 <pre>
                     <code>
 ./a.txt
@@ -134,7 +133,7 @@ test text
         </footer>
 
 
-        <script src="../../main.js"></script>
+        <script src="https://shigle.net/main.js"></script>
 
     </body>
 </html>
