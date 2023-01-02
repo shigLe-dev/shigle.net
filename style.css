@@ -1,6 +1,7 @@
 
 /*font*/
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 
 body{
@@ -155,7 +156,9 @@ footer ul{
     border-radius:0.5em;
 }
 
-
+code{
+    font-family: 'Source Code Pro', monospace;
+}
 
 
 /*buttonら*/
